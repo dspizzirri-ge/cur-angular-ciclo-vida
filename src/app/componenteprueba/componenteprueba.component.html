@@ -1,0 +1,8 @@
+<p>componenteprueba works!</p>
+<div *ngFor="let evento of eventos; let i = index">
+    <span [style.background-color]="i%2==0? 'lightgreen':'lightcoral'"> {{ evento }}</span>
+</div>
+
+<app-componentepruebahijo></app-componentepruebahijo>
+
+<input type="button" value="OtroComponente" [routerLink]="['/otroComponente']">
